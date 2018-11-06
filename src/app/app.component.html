@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Virtual Pets World</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon" [matMenuTriggerFor]="menu">menu</mat-icon>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Register</button>
+      <button mat-menu-item>Profile</button>
+      <button mat-menu-item>News</button>
+      <button mat-menu-item>Login</button>
+      <button mat-menu-item>Logout</button>
+      <button mat-menu-item>Help</button>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-tab-group mat-align-tabs="center">
+  <mat-tab label="My Pets"> Pets </mat-tab>
+  <mat-tab label="Market"> Market </mat-tab>
+  <mat-tab label="Items"> Items </mat-tab>
+  <mat-tab label="Chat"> Chat </mat-tab>
+</mat-tab-group>
+
+<router-outlet></router-outlet>
